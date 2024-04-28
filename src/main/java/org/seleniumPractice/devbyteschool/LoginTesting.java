@@ -9,6 +9,7 @@ public class LoginTesting {
         System.setProperty("webdriver.chrome.driver", "c:/chromedriver.exe");
         WebDriver driver= new ChromeDriver();
         driver.get("https://devbyteschool.com/");
+        System.out.println("system");
         driver.manage().window().maximize();
         Thread.sleep(5000);
         driver.findElement( By.xpath("/html/body/app-root/app-layout/app-header/header/div/nav/ul/li[2]/a")).click();
